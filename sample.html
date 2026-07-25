@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sample</title>
+<style>
+  :root { --bg: #fff; --text: #1a1a2e; --code-bg: #f4f4f5; --border: #e4e4e7; --link: #2563eb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f172a; --text: #e2e8f0; --code-bg: #1e293b; --border: #334155; --link: #60a5fa; }
+  }
+  body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem 1rem; background: var(--bg); color: var(--text); line-height: 1.7; }
+  h1 { border-bottom: 2px solid var(--border); padding-bottom: .5rem; }
+  h2, h3 { margin-top: 1.5em; }
+  a { color: var(--link); }
+  code { background: var(--code-bg); padding: .2em .4em; border-radius: 4px; font-size: .9em; }
+  pre { background: var(--code-bg); padding: 1rem; border-radius: 8px; overflow-x: auto; }
+  pre code { padding: 0; background: none; }
+  hr { border: none; border-top: 2px solid var(--border); margin: 2rem 0; }
+  blockquote { border-left: 4px solid var(--link); margin: 1em 0; padding: .5em 1em; background: var(--code-bg); border-radius: 0 8px 8px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid var(--border); padding: .5em; text-align: left; }
+  th { background: var(--code-bg); }
+</style>
+</head>
+<body><h1>md2html Demo</h1>
+<p>This is <strong>bold text</strong> and <em>italic text</em>.</p>
+<h2>Features</h2>
+<ul>
+<li>Zero dependencies (Node.js built-in modules only)</li>
+<li>Watch mode for auto-rebuild</li>
+<li>Live preview server</li>
+<li>Dark/light mode via <code>prefers-color-scheme</code></li>
+</ul>
+<h2>Code Example</h2>
+<pre><code class="language-js">const md2html = require('./md2html');
+const html = md2html.render(md2html.parse('# Hello'));</code></pre>
+<p>> This is a blockquote.</p>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<p>Check the <a href="https://github.com/toyro396133/md2html">GitHub repo</a> for more info.</p>
+</body>
+</html>

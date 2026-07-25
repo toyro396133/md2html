@@ -1,0 +1,11 @@
+{
+  "name": "md2html",
+  "version": "1.0.0",
+  "description": "A zero-dependency markdown-to-HTML converter CLI tool",
+  "main": "md2html.js",
+  "bin": {
+    "md2html": "./md2html.js"
+  },
+  "keywords": ["markdown", "html", "converter", "cli"],
+  "license": "MIT"
+}
