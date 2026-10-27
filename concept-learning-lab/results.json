@@ -1,0 +1,59 @@
+{
+  "version": "v4",
+  "generated_at": "2026-10-27",
+  "objects": 384,
+  "material_count": 16,
+  "form_count": 24,
+  "relations": 5,
+  "compositions": 1168,
+  "edges": 4224,
+  "train": 320,
+  "validation": 32,
+  "test": 32,
+  "initialization_seeds": [
+    7,
+    19,
+    31
+  ],
+  "mean_test_mse": {
+    "additive": 0.0018508522771298885,
+    "linear_equal_76_parameters": 0.0018506888688231509,
+    "two_shared_features": 0.00014058761492682,
+    "hierarchical": 0.0000048361051388686365,
+    "without_higher_unit": 0.00014879270747769624
+  },
+  "trial_results": [
+    {
+      "seed": 7,
+      "grown": true,
+      "additive": 0.0018508520442992449,
+      "equal_linear": 0.0018506888688231509,
+      "two_features": 0.00014053224003873765,
+      "nested": 0.000006065654361009365,
+      "ablated": 0.0001479899074183777
+    },
+    {
+      "seed": 19,
+      "grown": true,
+      "additive": 0.0018508523935452104,
+      "two_features": 0.00014060127432458103,
+      "nested": 0.000004471408374229213,
+      "ablated": 0.00015098748554009944
+    },
+    {
+      "seed": 31,
+      "grown": true,
+      "additive": 0.0018508523935452104,
+      "two_features": 0.00014062933041714132,
+      "nested": 0.000003971252681367332,
+      "ablated": 0.00014740072947461158
+    }
+  ],
+  "constraints": [
+    "Synthetic world only",
+    "Predefined relation ontology",
+    "Nested composition operator predefined, not invented",
+    "32 unseen material-form pairs but every material and form seen in training"
+  ],
+  "note": "This is a manually recorded summary of the detailed run; the executable reference implementation is in reproduce.py."
+}
